@@ -15,10 +15,6 @@ const addressesByNetworks = {
   moonbeam: ["0x11C8f790d252F4A49cFBFf5766310873898BF5D3"],
 };
 
-async function getTvl(api, chain) {
-
-}
-
 Object.keys(addressesByNetworks).forEach((chain) => {
   module.exports[chain] = {
     tvl: async (_, _1, _2, { api }) => {
